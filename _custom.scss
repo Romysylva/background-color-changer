@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    $base-f-c: 16px;
+}
+
+$text-c: #fff;
+$text-c-1: #033e45;
+$btn-bg-c: #f43281;
+$my-col: #F42DF8;
+
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    h1 {
+        color: $text-c-1;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+
+    }
+    span {
+        font-size: 24px;
+        background-color: #033e45;
+        color: $text-c;
+        padding: 5px 20px;
+        margin-bottom: 20px;
+    }
+    .btn {
+        padding: 8px 24px;
+        background-color: $btn-bg-c;
+        border: none ;
+        color: $text-c;
+        cursor: pointer;
+        text-transform: capitalize;
+        box-shadow: 0 2px 1px #080808;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: darken($btn-bg-c, 10);
+            transition: 0.3s ease;
+            padding: 8.5px 24.5px;
+            
+        }
+    }
+}
+
+@media (max-width:600px) {
+    h1 {
+        font-size: 24px;
+    }
+}
